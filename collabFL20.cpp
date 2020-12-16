@@ -25,6 +25,7 @@ void menu6Dominguez();
 void menu22Turcios();
 void menu21Tourkakis();
 void menu8Fuentes();
+void menu1yousef();
 
 // ***************************************************************
 // END OF FUNCTION PROTOTYPE AREA
@@ -57,7 +58,8 @@ int main()
         {
             switch (choice)
             {
-            case 1:                 // Aldossary - call to function goes here
+            case 1:
+		menu1Yousef()	    // Aldossary - call to function goes here
                 break;
             case 2:                 // Attar - call to function goes here
                 break;
@@ -171,6 +173,30 @@ void showMenu()
 //                     where XX is your menu number and
 //                           YY is your last name with no spaces (camel case)           
 // *****************************************************************************************
+// *****************************************************************************************
+// *****************************************************************************************
+// MENU ID:          1
+// FUNCTION:         menu1Yousef
+// DESCRIPTION:      this program will the calculate the denisty of any object given the mass and volume
+// OUTPUT EXAMPLE:   User enters: mass(kg): 30 volume: 10 (m^3)
+//                   Program outputs the following:
+//                   the density of the object is : 3
+// *****************************************************************************************
+void menu1Yousef()
+    int main()
+    {
+        float mass    ;  // holds the mass
+        float volume   ; // holds the volume
+        float density   ;// holds the density
+        cout<< "welcome to yousef's final project program :)";
+        cout<< " please enter the mass  in Kg";
+        cin>> mass;
+        cout<< "please enter the volume in m^3 ";
+        cin>>volume;
+        density = (mass/volume);
+        cout<<"The density of the object is  [kg/m^3] : " << density<< endl;
+
+}
 
 void menu21Tourkakis()
 {
